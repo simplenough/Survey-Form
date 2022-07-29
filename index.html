@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Potato Survey</title>
+	  <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+      <h1 id="title">POTATO SURVEY</h1>
+      <p id="description"> Do you love potatoes?</p>
+    <form id="survey-form">
+      <fieldset>
+      <div class="first">
+        <label id="name-label">
+          Name: 
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label">
+          Email: 
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label">
+          Age: 
+          <input type="number" id="number" min="3" max="120" placeholder="Enter your age"/>
+        </label>
+      </div>
+        <p class="para">What option best describes your current role?</p> 
+        <label class="second">
+            <select id="dropdown">
+              <option value="" disabled selected hidden>Select current role</option>
+              <option value="full">Full time potato eater</option>
+              <option value="part">Part time potato eater</option>
+              <option value="occasion">Occasional potato eater</option>
+              <option value="never">Loser</option>
+              <option value="pass">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+        </label>
+      <p class="para">Would you recommend potatoes to a friend?</p>
+      <label>
+        <input type="radio" value="definitely" name="recommendation" checked=""/> Definitely
+      </label>
+      <label>
+        <input type="radio" value="maybe" name="recommendation" /> Maybe
+      </label>
+      <label>
+        <input type="radio" value="not-sure" name="recommendation" /> Not sure
+      </label>
+    </div>
+    <div class="third"> 
+      <p class="para">Select all your favorite taters:</p>
+      <label>
+        <input type="checkbox" value="fries" /> Fries
+        <input type="checkbox" value="tots"/> Tots
+        <input type="checkbox" value="chip" /> Chips
+        <input type="checkbox" value="baked" /> Baked
+        <input type="checkbox" value="hashbrowns" /> Hashbrowns
+        <input type="checkbox" value="homefries" /> Homefries </br>
+        <input type="checkbox" value="boiled" /> Boiled
+        <input type="checkbox" value="mashed"/> Mashed
+      </label>
+  </div>
+      <p class="para">Anthing else you'd like to say about potatoes?</p>
+      <label>
+        <textarea placeholder="Enter your comments here..." rows="5" cols="40"></textarea>
+      </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
