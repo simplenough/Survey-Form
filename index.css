@@ -11,7 +11,7 @@ input[type=number] {
 }
 
 body {
-    background-image: url("/assets/potato_background.jpg");
+    background-image: url("./assets/potato_background.jpg");
     width: 100vw;
     height: 100vh;
     margin: 0;
